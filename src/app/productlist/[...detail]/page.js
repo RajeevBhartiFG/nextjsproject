@@ -23,7 +23,7 @@ export default async function Home() {
             <ul className="list-group">
                 {
                     userlist.map((item) => {
-                        return (<Link href={"/productlist/"+item.id} target="_blank"><li className="list-group-item" >{item.name}</li></Link>)
+                        return (<Link href={"/productlist/"+item.id} target="_blank" key={item.id}><li className="list-group-item" >{item.name}</li></Link>)
                     })
                 }
             </ul>
